@@ -6,6 +6,11 @@ public class InputUtil {
 
     private InputUtil() { }
 
+    /** Gives other classes the same Scanner so System.in is read by only one Scanner. */
+    public static Scanner getScanner() {
+        return SCANNER;
+    }
+
     /** Keeps asking until the user enters a valid whole number. */
     public static int readInt(String prompt) {
         while (true) {
@@ -40,4 +45,6 @@ public class InputUtil {
             System.out.println("Please type y or n.");
         }
     }
-}
+} 
+    
+
